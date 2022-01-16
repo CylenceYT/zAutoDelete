@@ -14,13 +14,13 @@ end)
 
 Citizen.CreateThread(function()
   while true do
-      local time = cfg.Dvtime
+      local time = config.Dvtime
       while (time ~= 0) do
           Wait( 1000 )
           time = time - 1
       end
       TriggerEvent("chat:addMessage", {
-            args={cfg.AnnounceMessage}
+            args={config.AnnounceMessage}
 		  })
       TriggerEvent("zad:autodel")
     end
