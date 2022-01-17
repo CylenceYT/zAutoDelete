@@ -22,6 +22,6 @@ Citizen.CreateThread(function()
       TriggerEvent("chat:addMessage", {
             args={config.AnnounceMessage}
 		  })
-      TriggerEvent("zad:autodel") -- This is a trigger
+      TriggerEvent("zad:autodel")
     end
 end)
